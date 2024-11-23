@@ -3,16 +3,32 @@
 ## Project Description
 Please describe your Startup Campus final project here. You may should your <b>model architecture</b> in JPEG or GIF.
 
+**RoadScan** adalah platform berbasis teknologi object detection yang memanfaatkan kecerdasan buatan (AI) untuk mendeteksi kerusakan jalan seperti lubang, retakan, atau deformasi. Solusi ini memberikan kemampuan otomatisasi, akurasi tinggi, dan efisiensi dalam memantau kondisi jalan.
+
+Detail Fitur dan Manfaat:
+- **Automatisasi Inspeksi Jalan**<br>
+   Menggunakan AI yang mampu mendeteksi jenis kerusakan jalan dari gambar atau video, menggantikan inspeksi manual yang memakan waktu dan tenaga.
+- **Penghematan Biaya dan Waktu**<br>
+   Respons yang lebih cepat dan efisien terhadap kerusakan jalan mengurangi biaya perbaikan dan durasi inspeksi manual.
+- **Pemetaan Kerusakan dan Prioritas Perbaikan**<br>
+   Menghasilkan data untuk memetakan area dengan kerusakan paling parah, memprioritaskan perbaikan sesuai kebutuhan.
+- **Peningkatan Keselamatan dan Kepuasan Pengguna Jalan**<br>
+   Menurunkan risiko kecelakaan akibat jalan rusak, meningkatkan kepercayaan masyarakat terhadap kualitas infrastruktur.
+
+RoadScan mendukung pencapaian Sustainable Development Goal (SDG) 11: Kota dan Pemukiman yang Berkelanjutan.
+- Meningkatkan keselamatan dan mobilitas masyarakat melalui deteksi dini kerusakan jalan.
+- Mendorong efisiensi dalam perbaikan jalan, sehingga mendukung kota yang lebih tangguh, aman, dan ramah lingkungan.
+
 ## Contributor
 | Full Name | Affiliation | Email | LinkedIn | Role |
 | --- | --- | --- | --- | --- |
 | Marsyanda Salsa Nabila | Startup Campus, AI Track | marsyandasalsa2021@gmail.com  | [link](https://www.linkedin.com/in/marsyandasalsanabila/) | Team Lead |
 | Ilham Khefi Ramadhanu | Startup Campus, AI Track | ilhamramadhanu25@gmail.com | [link](https://www.linkedin.com/in/ilham-khefi-ramadhanu) | Team Member |
-| Mochamad Freski Dino Fava | Startup Campus, AI Track | ... | ... | Team Member |
-| Shafa Anisya Aji Divana | Startup Campus, AI Track | ... | ... | Team Member |
+| Mochamad Freski Dino Fava | Startup Campus, AI Track | dinofava12@gmail.com | [link](https://www.linkedin.com/in/mochamad-freski-dino-fava-4a9162323/) | Team Member |
+| Shafa Anisya Aji Divana | Startup Campus, AI Track | shafadivana@gmail.com | [link](https://www.linkedin.com/in/shafadivana/) | Team Member |
 | Nisrina Alifa Adzahra | Startup Campus, AI Track | nisrinalifa@gmail.com | [link](https://www.linkedin.com/in/nisrina-alifa-adzahra/) | Team Member |
 | Cijo Jidan Riady | Startup Campus, AI Track | ... | ... | Team Member |
-| Ghea Dwi Apriliana | Startup Campus, AI Track | ... | ... | Team Member |
+| Ghea Dwi Apriliana | Startup Campus, AI Track | gheapriliana96@gmail.com | [link](https://www.linkedin.com/in/ghea-dwi-apriliana-5623a8193/) | Team Member |
 | Nicholas Dominic | Startup Campus, AI Track | nic.dominic@icloud.com | [link](https://linkedin.com/in/nicholas-dominic) | Supervisor |
 
 ## Setup
@@ -129,4 +145,4 @@ If you find this project useful, we'd grateful if you cite this repository:
 For academic and non-commercial use only.
 
 ## Acknowledgement
-This project entitled <b>"AI-Driven Road Quality Detection for Accessiblity and Safety"</b> is supported and funded by Startup Campus Indonesia and Indonesian Ministry of Education and Culture through the "**Kampus Merdeka: Magang dan Studi Independen Bersertifikasi (MSIB)**" program.
+This project entitled <b>"RoadScan"</b> is supported and funded by Startup Campus Indonesia and Indonesian Ministry of Education and Culture through the "**Kampus Merdeka: Magang dan Studi Independen Bersertifikasi (MSIB)**" program.
