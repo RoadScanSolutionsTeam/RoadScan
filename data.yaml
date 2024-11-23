@@ -1,0 +1,13 @@
+train: ../train/images
+# val: ../valid/images
+# test: ../test/images
+
+nc: 22
+names: ['alligator crack', 'block crack', 'bumps sags', 'corner break', 'crack', 'divided slab crack', 'durability crack', 'edge crack', 'joint spalling', 'joint', 'lateral crack', 'linear crack', 'longitudinal crack', 'manhole cover', 'miscellanious crack', 'patch utility cut', 'patching', 'pothole', 'rutting', 'slippage crack', 'transverse crack', 'weather raveling']
+
+roboflow:
+  workspace: arliyantin
+  project: road-damage-detection-mxnpt
+  version: 3
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/arliyantin/road-damage-detection-mxnpt/dataset/3
