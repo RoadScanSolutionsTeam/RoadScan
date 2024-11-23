@@ -1,0 +1,17 @@
+names:
+- Lubang
+- Melintang
+- Memanjang
+- Pinggir
+- Retak Buaya
+- Sambungan
+nc: 6
+roboflow:
+  license: CC BY 4.0
+  project: jalanrusak-zofhk
+  url: https://universe.roboflow.com/tugas-xogo7/jalanrusak-zofhk/dataset/6
+  version: 6
+  workspace: tugas-xogo7
+test: ../test/images
+train: ../train/images
+val: ../valid/images
