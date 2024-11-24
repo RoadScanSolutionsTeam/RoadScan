@@ -3,17 +3,17 @@
 ## Project Description
 Please describe your Startup Campus final project here. You may should your <b>model architecture</b> in JPEG or GIF.
 
-**RoadScan** adalah platform berbasis teknologi object detection yang memanfaatkan kecerdasan buatan (AI) untuk mendeteksi kerusakan jalan seperti lubang, retakan, atau deformasi. Solusi ini memberikan kemampuan otomatisasi, akurasi tinggi, dan efisiensi dalam memantau kondisi jalan.
+**RoadScan** adalah platform berbasis teknologi object detection yang memanfaatkan kecerdasan buatan (AI) untuk mendeteksi berbagai kerusakan infrastruktur jalan seperti lubang, retakan, atau deformasi. Solusi ini memberikan kemampuan otomatisasi, akurasi tinggi, dan efisiensi dalam memantau kondisi jalan untuk perencanaan perbaikan yang lebih strategis.
 
 Detail Fitur dan Manfaat:
 - **Automatisasi Inspeksi Jalan**<br>
-   Menggunakan AI yang mampu mendeteksi jenis kerusakan jalan dari gambar atau video, menggantikan inspeksi manual yang memakan waktu dan tenaga.
+   Sistem berbasis AI ini secara otomatis mampu mendeteksi jenis kerusakan jalan dari gambar atau video, menggantikan inspeksi manual yang memakan waktu dan tenaga.
 - **Penghematan Biaya dan Waktu**<br>
-   Respons yang lebih cepat dan efisien terhadap kerusakan jalan mengurangi biaya perbaikan dan durasi inspeksi manual.
+   Implementasi sistem ini menghasilkan respons yang lebih cepat dan efisien terhadap kerusakan jalan sehingga mengurangi biaya perbaikan dan durasi inspeksi manual.
 - **Pemetaan Kerusakan dan Prioritas Perbaikan**<br>
-   Menghasilkan data untuk memetakan area dengan kerusakan paling parah, memprioritaskan perbaikan sesuai kebutuhan.
+   Platform ini menghasilkan data untuk memetakan area dengan kerusakan paling parah, sehingga memudahkan penentuan prioritas perbaikan sesuai kebutuhan.
 - **Peningkatan Keselamatan dan Kepuasan Pengguna Jalan**<br>
-   Menurunkan risiko kecelakaan akibat jalan rusak, meningkatkan kepercayaan masyarakat terhadap kualitas infrastruktur.
+   Dengan deteksi dini kerusakan jalan ini menurunkan risiko kecelakaan akibat jalan rusak dan meningkatkan kepercayaan masyarakat terhadap kualitas infrastruktur.
 
 RoadScan mendukung pencapaian Sustainable Development Goal (SDG) 11: Kota dan Pemukiman yang Berkelanjutan.
 - Meningkatkan keselamatan dan mobilitas masyarakat melalui deteksi dini kerusakan jalan.
@@ -43,16 +43,17 @@ RoadScan mendukung pencapaian Sustainable Development Goal (SDG) 11: Kota dan Pe
 ### Environment
 | | |
 | --- | --- |
-| CPU | Example: Apple M3 Pro 12-core CPU |
-| GPU | Example: Nvidia T4 (x1) |
-| ROM | Example: 1 TB SSD |
-| RAM | Example: 36 GB |
-| OS | Example: macOS Sonoma v14.1.1 |
+| CPU | Intel(R) Core(TM) i7-7820HQ CPU @ 2.90GHz   2.90 GHz |
+| GPU | NVIDIA GeForce 940MX |
+| ROM | 256 GB SSD |
+| RAM | 32 GB |
+| OS | Example: Windows 10 Pro 22H2 |
 
 ## Dataset
 Describe your dataset information here. Provide a screenshot for some of your dataset samples (for example, if you're using CIFAR10 dataset, then show an image for each class).
 
-Dataset "Jalan Rusak" dirancang untuk mendeteksi kerusakan jalan menggunakan teknik computer vision. Dataset ini terdiri dari gambar-gambar yang telah dianotasi dengan label yang merepresentasikan berbagai jenis kerusakan jalan.
+Dataset "Jalan Rusak" dirancang untuk mendeteksi kerusakan jalan menggunakan teknik computer vision. Dataset ini terdiri dari gambar-gambar yang telah dianotasi dengan label yang merepresentasikan berbagai jenis kerusakan jalan. Yaitu berisi kumpulan foto kerusakan jalan yang berjumlah 4.983 data, dengan pembagian sebanyak 4.098 data train, 591 data validation, dan 294 data test yang terbagi menjadi 6 kategori yaitu Lubang, Melintang, Memanjang, Pinggir, Retak Buaya dan Sambungan.
+
 - Link: https://universe.roboflow.com/tugas-xogo7/jalanrusak-zofhk
 
 ## Results
