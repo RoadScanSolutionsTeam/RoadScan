@@ -105,15 +105,12 @@ Inform your model validation performances, as follows:
 
 Feel free to adjust the columns in the table below.
 
-| model | epoch | learning_rate | batch_size | optimizer | val_loss | val_precision | val_recall | mAP50 | mAP 50-95 |
+| model | epoch | learning_rate | batch_size | optimizer | val_precision | val_recall | mAP50 | mAP 50-95 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| YOLOv8s | 50 | 0.001 | 32 | AdamW | ... | ... | ... | 0.942 | 0.7 |
-| YOLOv8s | 50 | 0.001 | 16 | AdamW | ... | ... | ... | 0.943 | 0.698 |
-| YOLOv8n | 50 | 0.001 | 32 | AdamW | ... | ... | ... | 0.939 | 0.688 |
-| YOLOv8n | 50 | 0.001 | 16 | AdamW | ... | ... | ... | 0.944 | 0.678 |
-| vit_b_16 | 1000 |  0.0001 | 32 | Adam | 0.093 | 88.34% | 84.15% | ... |
-| vit_l_32 | 2500 | 0.00001 | 128 | SGD | 0.041 | 90.19% | 87.55% | ... |
-| ... | ... | ... | ... | ... | ... | ... | ... | ... | 
+| YOLOv8s | 50 | 0.001 | 32 | AdamW | 0.902 | 0.908 | 0.947 | 0.707 |
+| YOLOv8s | 50 | 0.001 | 16 | AdamW | 0.898 | 0.902 | 0.943 | 0.698 |
+| YOLOv8n | 50 | 0.001 | 32 | AdamW | 0.908 | 0.889 | 0.939 | 0.688 |
+| YOLOv8n | 50 | 0.001 | 16 | AdamW | 0.904 | 0.888 | 0.944 | 0.678 |
 
 #### 2. Training/Validation Curve
 Insert an image regarding your training and evaluation performances (especially their losses). The aim is to assess whether your model is fit, overfit, or underfit.
