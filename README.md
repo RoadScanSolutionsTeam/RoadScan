@@ -114,15 +114,29 @@ Alasan kami memilih model tersebut sebagai model terbaik yang kami terapkan kare
 
 ##### Training Curve: 
 - Precision Curve:
+![P_curve](https://github.com/user-attachments/assets/0108e8ed-6afa-4810-8de6-c2554d21451c)
+
 - Recall Curve:
+![R_curve](https://github.com/user-attachments/assets/c86cabfc-e61b-4644-85bf-ac14ef532eee)
+
 - PR Curve:
+![PR_curve](https://github.com/user-attachments/assets/cbc78c3e-bdcd-4bd8-a725-d3cf5b0b1336)
+
 - F1 Curve:
+![F1_curve](https://github.com/user-attachments/assets/5a9009e1-07ce-4d89-a45d-e8182f0ab0c2)
 
 ##### Validation Curve: 
 - Precision Curve:
+![P_curve](https://github.com/user-attachments/assets/1fb2d9c9-83b0-46f5-95d7-d1f58cfd6ed0)
+
 - Recall Curve:
+![R_curve](https://github.com/user-attachments/assets/feff8603-2567-475f-949e-d7a4dad20af3)
+
 - PR Curve:
+![PR_curve](https://github.com/user-attachments/assets/db2c239c-8b49-4c02-888b-e7e51dcde5c8)
+
 - F1 Curve:
+![F1_curve](https://github.com/user-attachments/assets/df148f3e-d125-4967-8944-7ce03b3f04b6)
 
 ##### Train / Val Loss:
 ![results](https://github.com/user-attachments/assets/ccf05972-4e6d-47a0-9f2a-f216572f45b3)
