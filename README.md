@@ -94,6 +94,7 @@ Dataset "Jalan Rusak" dirancang untuk mendeteksi kerusakan jalan menggunakan tek
 Describe all results found in your final project experiments, including hyperparameters tuning and architecture modification performances. Put it into table format. Please show pictures (of model accuracy, loss, etc.) for more clarity.
 
 #### 1. Metrics
+Berikut adalah tuning terbaik yang kami pilih dan gunakan untuk modifikasi arsitektur model.
 
 | model | epoch | learning_rate | batch_size | optimizer | val_precision | val_recall | mAP50 | mAP 50-95 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -102,12 +103,33 @@ Describe all results found in your final project experiments, including hyperpar
 | YOLOv8n | 50 | 0.001 | 32 | AdamW | 0.908 | 0.889 | 0.939 | 0.688 |
 | YOLOv8n | 50 | 0.001 | 16 | AdamW | 0.904 | 0.888 | 0.944 | 0.678 |
 
+Model dengan hyperparameter terbaik yang kami pilih adalah:
+| model | epoch | learning_rate | batch_size | optimizer | val_precision | val_recall | mAP50 | mAP 50-95 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| YOLOv8s | 50 | 0.001 | 32 | AdamW | 0.902 | 0.908 | 0.947 | 0.707 |
+
+Alasan kami memilih model tersebut sebagai model terbaik yang kami terapkan karena tingkat keakuratan yang didapatkan cukup tinggi dan cukup optimal.
+
 #### 2. Training/Validation Curve
+
+##### Training Curve: 
+- Precision Curve:
+- Recall Curve:
+- PR Curve:
+- F1 Curve:
+
+##### Validation Curve: 
+- Precision Curve:
+- Recall Curve:
+- PR Curve:
+- F1 Curve:
+
+##### Train / Val Loss:
 ![results](https://github.com/user-attachments/assets/ccf05972-4e6d-47a0-9f2a-f216572f45b3)
 
-#### Confusion Matrix
+#### 3. Confusion Matrix
+![confusion_matrix](https://github.com/user-attachments/assets/d95d2dcc-b2b0-4f97-9a33-8dacc834cb2b)
 
- 
 ### Testing
 Show some implementations (demos) of this model. Show **at least 10 images** of how your model performs on the testing data.
 ![Untitled](https://github.com/user-attachments/assets/5c446257-5b4d-43ad-85f3-dd91e46cc5ce)
