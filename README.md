@@ -5,6 +5,9 @@ Please describe your Startup Campus final project here. You may should your <b>m
 
 **RoadScan** adalah platform berbasis teknologi object detection yang memanfaatkan kecerdasan buatan (AI) untuk mendeteksi berbagai kerusakan infrastruktur jalan seperti lubang, retakan, atau deformasi. Solusi ini memberikan kemampuan otomatisasi, akurasi tinggi, dan efisiensi dalam memantau kondisi jalan untuk perencanaan perbaikan yang lebih strategis.
 
+Penggunaan Computer Vision, khususnya Object Detection, terutama untuk mendeteksi dan mengidentifikasi berbagai kerusakan infrastruktur jalan sangat membantu dalam memantau kondisi jalan secara efisien dan akurat. Teknologi yang digunakan adalah YOLOv8s dari Ultralytics.
+YOLO (You Only Look Once) adalah sistem deteksi objek yang terkenal karena kecepatan dan akurasinya. Versi terbaru, YOLOv8s, membawa peningkatan yang signifikan dari versi sebelumnya.
+
 Detail Fitur dan Manfaat:
 - **Automatisasi Inspeksi Jalan**<br>
    Sistem berbasis AI ini secara otomatis mampu mendeteksi jenis kerusakan jalan dari gambar atau video, menggantikan inspeksi manual yang memakan waktu dan tenaga.
@@ -69,8 +72,8 @@ RoadScan mendukung pencapaian Sustainable Development Goal (SDG) 11: Kota dan Pe
 - certifi==2017.4.17
 - typing-extensions==4.8.0
 - MarkupSafe==2.0
+- sympy==1.13.1
 - mpmath<1.4,==1.1.0
-- ...
 - ...
 
 ### Environment
@@ -80,7 +83,7 @@ RoadScan mendukung pencapaian Sustainable Development Goal (SDG) 11: Kota dan Pe
 | GPU | NVIDIA GeForce 940MX |
 | ROM | 256 GB SSD |
 | RAM | 32 GB |
-| OS | Example: Windows 10 Pro 22H2 |
+| OS | Windows 10 Pro 22H2 |
 
 ## Dataset
 Describe your dataset information here. Provide a screenshot for some of your dataset samples (for example, if you're using CIFAR10 dataset, then show an image for each class).
@@ -92,6 +95,8 @@ Dataset "Jalan Rusak" dirancang untuk mendeteksi kerusakan jalan menggunakan tek
 ## Results
 ### Model Performance
 Describe all results found in your final project experiments, including hyperparameters tuning and architecture modification performances. Put it into table format. Please show pictures (of model accuracy, loss, etc.) for more clarity.
+
+Seperti yang tertera di deskripsi project bahwa model yang kami menggunakan adalah YOLOv8s. Namun sebelumnya kami telah mencoba terlebih dahulu membandingkan performa antara YOLOv8n dan YOLOv8s (mAP dan running time). Berdasarkan perbandingan tersebut kami memilih untuk menggunakan model YOLOv8s dengan memelakukan modifikasi arsitektur model untuk menghasilkan akurasi terbaik. 
 
 #### 1. Metrics
 Berikut adalah tuning terbaik yang kami pilih dan gunakan untuk modifikasi arsitektur model.
@@ -140,9 +145,12 @@ Alasan kami memilih model tersebut sebagai model terbaik yang kami terapkan kare
 
 ##### Train / Val Loss:
 ![results](https://github.com/user-attachments/assets/ccf05972-4e6d-47a0-9f2a-f216572f45b3)
+Dari grafik Training/Validation di atas, terlihat bahwa semakin bertambah epoch, grafik loss train dan validation untuk object, box, dan kelas semakin menurun mendekati 0. Ini menunjukkan bahwa model semakin baik dan tidak mengalami overfitting maupun underfitting.
+Selain itu, grafik metrik precision, recall, dan mAP50 serta mAP50-95 juga meningkat mendekati 1.0 seiring bertambahnya epoch. Hal ini mengindikasikan bahwa performa model semakin baik dalam hal klasifikasi dan deteksi objek.
 
 #### 3. Confusion Matrix
 ![confusion_matrix](https://github.com/user-attachments/assets/d95d2dcc-b2b0-4f97-9a33-8dacc834cb2b)
+Dari Confusion Matrix di atas, terlihat bahwa sebagian besar kelas sudah mencapai nilai diagonal 1.00, mengindikasikan bahwa model dapat mengklasifikasikan objek-objek tersebut dengan sangat baik.
 
 ### Testing
 Show some implementations (demos) of this model. Show **at least 10 images** of how your model performs on the testing data.
