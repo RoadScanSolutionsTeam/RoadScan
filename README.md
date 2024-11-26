@@ -159,7 +159,11 @@ Show some implementations (demos) of this model. Show **at least 10 images** of 
 ![Untitled](https://github.com/user-attachments/assets/45f5ca98-1979-4f35-a925-00fc524e93ba)
 
 ### Deployment (Optional)
-Describe and show how you deploy this project (e.g., using Streamlit or Flask), if any.
+Aplikasi ini dikembangkan dengan menggunakan library <b>Tkinter</b>, sebuah library Python populer untuk menciptakan antarmuka pengguna grafis (GUI) yang interaktif dan mudah digunakan. Dengan desain yang user-friendly, aplikasi ini dirancang untuk memberikan pengalaman pengguna yang intuitif dan nyaman. Fitur utama aplikasi ini adalah kemampuannya untuk mendeteksi dan mengidentifikasi kerusakan jalan secara akurat, berkat penggunaan model <b>YOLOv8</b> yang telah dikonfigurasi khusus untuk tugas deteksi kerusakan jalan. Proses deteksi dilakukan berdasarkan input berupa <b>file gambar</b> maupun <b>file video</b>, sehingga memungkinkan pengguna untuk menganalisis berbagai jenis data secara fleksibel.<br><br>
+Keunggulan lain dari aplikasi ini adalah adanya fitur <b>Pause Detection</b> dan <b>Start Detection</b>, yang memberikan kontrol penuh kepada pengguna dalam proses identifikasi. Dengan fitur ini, pengguna dapat menghentikan atau melanjutkan deteksi kapan saja, menjadikan analisis kerusakan jalan lebih efisien dan optimal.<br><br>
+Dengan kombinasi teknologi terkini dan antarmuka yang sederhana, aplikasi ini menjadi solusi andal untuk membantu mendeteksi dan memetakan kerusakan jalan, membuka peluang untuk pengelolaan infrastruktur yang lebih baik.
+
+
 
 ## Supporting Documents
 ### Presentation Deck
