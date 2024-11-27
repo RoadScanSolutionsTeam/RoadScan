@@ -92,6 +92,19 @@ Dataset "Jalan Rusak" dirancang untuk mendeteksi kerusakan jalan menggunakan tek
 
 - Link: https://universe.roboflow.com/tugas-xogo7/jalanrusak-zofhk
 
+**Gambar Setiap Kelas**
+1. Lubang
+   
+2. Melintang
+   
+3. Memanjang
+   
+4. Pinggir
+
+5. Retak Buaya
+   
+6. Sambungan
+
 ## Results
 ### Model Performance
 Seperti yang tertera di deskripsi project bahwa model yang kami gunakan adalah YOLOv8s. Namun, sebelumnya kami telah mencoba terlebih dahulu membandingkan performa antara YOLOv8n dan YOLOv8s (mAP dan running time). Berdasarkan perbandingan dan ekplorasi yang telah dilakukan, kami memilih untuk menggunakan model YOLOv8s sebagai model dengan performa terbaik. 
@@ -176,8 +189,77 @@ Dengan kombinasi teknologi terkini dan antarmuka yang sederhana, aplikasi ini me
 - Link: https://...
 
 ### Business Model Canvas
-Provide a screenshot of your Business Model Canvas (BMC). Give some explanations, if necessary.
-![BMC](https://github.com/user-attachments/assets/25341651-8a71-464e-9c65-583735bd88c9)
+![BMC](https://github.com/user-attachments/assets/2a1f4902-abbc-4b5b-a80c-264a8cc85f5b)
+
+- **Problem Statement**
+   <br>Tingginya tingkat kerusakan jalan berlubang di berbagai wilayah Indonesia menyebabkan peningkatan risiko kecelakaan lalu lintas dan menghambat
+   kelancaran mobilitas masyarakat. Kerusakan jalan berlubang mengakibatkan biaya perawatan kendaraan meningkat, waktu tempuh menjadi lebih lama, dan potensi
+   terjadinya kecelakaan yang dapat menimbulkan korban jiwa dan kerugian materi.
+  
+- **Mission Statement**
+   <br>Menyediakan platform berbasis AI yang mampu mendeteksi, menganalisis, dan memonitor kondisi jalan secara otomatis.
+  
+- **Key Partners**
+  <br> Jaringan pemasok dan mitra pendukung model/ide bisnis
+  1. Pemerintah Lokal dan Pusat
+  2. Kontraktor
+  3. Penyedia Cloud
+  4. Investor
+  5. Penyedia Data
+  6. Tech Companies
+  7. Payment Gateway
+
+- **Key Activities**
+  1. Technology R&D
+  2. Production & Maintenance
+  3. Pengumpulan Data Jalan
+  4. Data Analytics
+  5. Sales & Marketing
+
+- **Key Resources**
+  1. Karyawan
+  2. Database
+  3. Teknologi (AI Model, Cloud, etc.)
+  4. Payment Gateway
+
+- **Value Propositions**
+  1. Identifikasi cepat dan akurat
+  2. Peningkatan keselamatan pengguna jalan
+  3. Transparansi data untuk pemerintah dan masyarakat
+
+- **Stakeholder / Customer Relationship**
+  1. Customer Service
+  2. Community Forum
+  3. Social Media and Email Support
+  4. Referral Program (pemberian hadiah kepada pengguna yang berhasil mengajak teman untuk mendaftar dan berbelanja)
+ 
+- **Channels**
+  1. Word of Mouth
+  2. Online Ads
+  3. Social Media
+
+- **Stakeholder / Customer Relationship**
+  1. Pemerintah Lokal dan Pusat (pengelola infrastruktur)
+  2. Perusahaan Konstruksi atau perbaikan jalan
+  3. Perusahaan Logistik dan Transportasi
+  4. Organisasi non-pemerintah yang peduli infrastruktur
+  5. Komunitas lokal atau individu yang ingin berkontribusi
+ 
+- **Cost Structure**
+  
+  CAPITAL EXPENDITURE
+  1. Biaya Pengumpulan Data
+  2. Research and Development
+
+  OPERATIONAL EXPENDITURE
+  1. Production and Maintenance
+  2. Marketing
+  3. Deployment
+ 
+- **Revenue Streams**
+  1. Subscription Model
+  2. Data Licensing
+  3. Integrasi premium
 
 ### Short Video
 Provide a link to your short video, that should includes the project background and how it works.
