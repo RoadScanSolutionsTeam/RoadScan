@@ -1,7 +1,6 @@
 # RoadScan
 
 ## Project Description
-Please describe your Startup Campus final project here. You may should your <b>model architecture</b> in JPEG or GIF.
 
 **RoadScan** adalah platform berbasis teknologi object detection yang memanfaatkan kecerdasan buatan (AI) untuk mendeteksi berbagai kerusakan infrastruktur jalan seperti lubang, retakan, atau deformasi. Solusi ini memberikan kemampuan otomatisasi, akurasi tinggi, dan efisiensi dalam memantau kondisi jalan untuk perencanaan perbaikan yang lebih strategis.
 
@@ -30,7 +29,7 @@ RoadScan mendukung pencapaian Sustainable Development Goal (SDG) 11: Kota dan Pe
 | Mochamad Freski Dino Fava | Startup Campus, AI Track | dinofava12@gmail.com | [link](https://www.linkedin.com/in/mochamad-freski-dino-fava-4a9162323/) | Team Member |
 | Shafa Anisya Aji Divana | Startup Campus, AI Track | shafadivana@gmail.com | [link](https://www.linkedin.com/in/shafadivana/) | Team Member |
 | Nisrina Alifa Adzahra | Startup Campus, AI Track | nisrinalifa@gmail.com | [link](https://www.linkedin.com/in/nisrina-alifa-adzahra/) | Team Member |
-| Cijo Jidan Riady | Startup Campus, AI Track | ... | ... | Team Member |
+| Cijo Jidan Riady | Startup Campus, AI Track | cijo.business@gmail.com | [link](https://www.linkedin.com/in/cijo/) | Team Member |
 | Ghea Dwi Apriliana | Startup Campus, AI Track | gheapriliana96@gmail.com | [link](https://www.linkedin.com/in/ghea-dwi-apriliana-5623a8193/) | Team Member |
 | Nicholas Dominic | Startup Campus, AI Track | nic.dominic@icloud.com | [link](https://linkedin.com/in/nicholas-dominic) | Supervisor |
 
@@ -94,9 +93,7 @@ Dataset "Jalan Rusak" dirancang untuk mendeteksi kerusakan jalan menggunakan tek
 
 ## Results
 ### Model Performance
-Describe all results found in your final project experiments, including hyperparameters tuning and architecture modification performances. Put it into table format. Please show pictures (of model accuracy, loss, etc.) for more clarity.
-
-Seperti yang tertera di deskripsi project bahwa model yang kami menggunakan adalah YOLOv8s. Namun sebelumnya kami telah mencoba terlebih dahulu membandingkan performa antara YOLOv8n dan YOLOv8s (mAP dan running time). Berdasarkan perbandingan tersebut kami memilih untuk menggunakan model YOLOv8s dengan memelakukan modifikasi arsitektur model untuk menghasilkan akurasi terbaik. 
+Seperti yang tertera di deskripsi project bahwa model yang kami gunakan adalah YOLOv8s. Namun, sebelumnya kami telah mencoba terlebih dahulu membandingkan performa antara YOLOv8n dan YOLOv8s (mAP dan running time). Berdasarkan perbandingan dan ekplorasi yang telah dilakukan, kami memilih untuk menggunakan model YOLOv8s sebagai model dengan performa terbaik. 
 
 #### 1. Metrics
 Berikut adalah tuning terbaik yang kami pilih dan gunakan untuk modifikasi arsitektur model.
@@ -150,7 +147,7 @@ Selain itu, grafik metrik precision, recall, dan mAP50 serta mAP50-95 juga menin
 
 #### 3. Confusion Matrix
 ![confusion_matrix](https://github.com/user-attachments/assets/d95d2dcc-b2b0-4f97-9a33-8dacc834cb2b)
-Dari Confusion Matrix di atas, terlihat bahwa sebagian besar kelas sudah mencapai nilai diagonal 1.00, mengindikasikan bahwa model dapat mengklasifikasikan objek-objek tersebut dengan sangat baik.
+Confusion matrix menunjukkan performa model dalam mengklasifikasikan jenis kerusakan jalan dan background, dengan hasil terbaik pada kelas Memanjang (171 benar, 3 salah) dan Sambungan (136 benar, 11 salah), cukup baik pada kelas Lubang (154 benar, 18 salah) dan Retak Buaya (86 benar, 7 salah), namun kurang optimal pada kelas Pinggir (89 benar, >30 salah), Melintang (116 benar, 33 salah), serta Background yang memiliki performa terendah (13-11 benar). Untuk meningkatkan akurasi, diperlukan langkah seperti menyeimbangkan data, augmentasi, dan tuning model, terutama untuk kelas minor dan yang sering tertukar. Dari Confusion Matrix di atas, disimpulkan terlihat bahwa sebagian besar kelas sudah mencapai nilai diagonal 1.00, mengindikasikan bahwa model dapat mengklasifikasikan objek-objek tersebut dengan sangat baik.
 
 ### Testing
 Show some implementations (demos) of this model. Show **at least 10 images** of how your model performs on the testing data.
