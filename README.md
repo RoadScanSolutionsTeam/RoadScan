@@ -1,5 +1,5 @@
 # RoadScan
-### AI-Driven Road Quality Detection for Acceasibility and Safety
+### AI-Driven Road Quality Detection for Accessibility and Safety
 
 ## Project Description
 
@@ -267,8 +267,8 @@ Provide a link to your short video, that should includes the project background 
 
 ## References
 Provide all links that support this final project, i.e., papers, GitHub repositories, websites, etc.
-- Link: https://...
-- Link: https://...
+- Link: https://www.aideeplearningml.com/how-to-train-yolov8-object-detection-on-custom-fruit-vegetabdataset/
+- Link: https://youtube.com/playlist?list=PL8q4s70ndvwf3mFNaW8BLNrrItNl6PlA2&si=V-woIN2RLIjSuKMO
 - Link: https://...
 
 ## Additional Comments
