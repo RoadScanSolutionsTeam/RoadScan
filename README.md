@@ -74,7 +74,12 @@ RoadScan mendukung pencapaian Sustainable Development Goal (SDG) 11: Kota dan Pe
 - MarkupSafe==2.0
 - sympy==1.13.1
 - mpmath<1.4,==1.1.0
-- ...
+- Python==3.11.2 (latest)
+- tkinter==Integrated with Python
+- pip==23.0.1 (latest)
+- setuptools==67.2.0 (latest)
+- wheel==0.38.4 (latest)
+- Keras==2.12.0 (latest)
 
 ### Environment
 | | |
@@ -176,6 +181,8 @@ Show some implementations (demos) of this model. Show **at least 10 images** of 
 ![Untitled](https://github.com/user-attachments/assets/41b6a002-7730-40b3-a778-82087fed4477)
 ![Untitled](https://github.com/user-attachments/assets/15985a3a-5f13-4b6a-970f-966323537173)
 ![Untitled](https://github.com/user-attachments/assets/45f5ca98-1979-4f35-a925-00fc524e93ba)
+
+Testing deteksi objek atau segmentasi model telah mendeteksi dan menyoroti berbagai lubang dan kerusakan di jalan tanah memberikan nilai numerik yang mewakili informasi tentang objek yang terdeteksi. Secara keseluruhan, tujuan pengujian ini adalah untuk mengevaluasi kinerja model dalam mendeteksi dan menganalisis kondisi jalan serta objek, yang dapat berguna untuk aplikasi seperti pemantauan infrastruktur dan navigasi kendaraan otonom. Model mampu memberikan penilaian kuantitatif atas elemen yang dideteksi, yang dapat bermanfaat untuk pengambilan keputusan berbasis data.
 
 ### Deployment (Optional)
 Aplikasi ini dikembangkan dengan menggunakan library <b>Tkinter</b>, sebuah library Python populer untuk menciptakan antarmuka pengguna grafis (GUI) yang interaktif dan mudah digunakan. Dengan desain yang user-friendly, aplikasi ini dirancang untuk memberikan pengalaman pengguna yang intuitif dan nyaman. Fitur utama aplikasi ini adalah kemampuannya untuk mendeteksi dan mengidentifikasi kerusakan jalan secara akurat, berkat penggunaan model <b>YOLOv8</b> yang telah dikonfigurasi khusus untuk tugas deteksi kerusakan jalan. Proses deteksi dilakukan berdasarkan input berupa <b>file gambar</b> maupun <b>file video</b>, sehingga memungkinkan pengguna untuk menganalisis berbagai jenis data secara fleksibel.<br><br>
