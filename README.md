@@ -107,7 +107,7 @@ Dataset "Jalan Rusak" dirancang untuk mendeteksi kerusakan jalan menggunakan tek
 
 ## Results
 ### Model Performance
-Seperti yang tertera di deskripsi project bahwa model yang kami gunakan adalah YOLOv8s. Namun, sebelumnya kami telah mencoba terlebih dahulu membandingkan performa antara YOLOv8n dan YOLOv8s (mAP dan running time). Berdasarkan perbandingan dan ekplorasi yang telah dilakukan, kami memilih untuk menggunakan model YOLOv8s sebagai model dengan performa terbaik. 
+Seperti yang tertera di deskripsi project bahwa model yang kami gunakan adalah YOLOv8s. Namun, sebelumnya kami telah mencoba terlebih dahulu membandingkan performa antara YOLOv8n dan YOLOv8s (mAP dan running time). Berdasarkan perbandingan dan ekplorasi yang telah dilakukan, kami memilih untuk menggunakan model YOLOv8s sebagai model dengan performa terbaik. Model-model yang dijalankan dilakukan preprocessing dengan melakukan resize image (imgsz) sebesar 640 untuk menyamaratakan size input image. Selebihnya data sudah cukup baik sehingga tidak dilakukan preprocessing lainnya.
 
 #### 1. Metrics
 Berikut adalah tuning terbaik yang kami pilih dan gunakan untuk modifikasi arsitektur model.
