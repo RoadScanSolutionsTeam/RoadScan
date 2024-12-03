@@ -189,6 +189,8 @@ Dari grafik Training/Validation di atas dapat disimpulkan bahwa:
 
 #### 3. Confusion Matrix
 ![confusion_matrix](https://github.com/user-attachments/assets/d95d2dcc-b2b0-4f97-9a33-8dacc834cb2b)
+![confusion_matrix_normalized](https://github.com/user-attachments/assets/ddc8b0e5-9fab-4726-aac3-424537385bd7)
+
 Confusion matrix menunjukkan performa model dalam mengklasifikasikan jenis kerusakan jalan dan background, dengan hasil terbaik pada kelas Memanjang (171 benar, 3 salah) dan Sambungan (136 benar, 11 salah), cukup baik pada kelas Lubang (154 benar, 18 salah) dan Retak Buaya (86 benar, 7 salah), namun kurang optimal pada kelas Pinggir (89 benar, >30 salah), Melintang (116 benar, 33 salah), serta Background yang memiliki performa terendah (13-11 benar). Untuk meningkatkan akurasi, diperlukan langkah seperti menyeimbangkan data, augmentasi, dan tuning model, terutama untuk kelas minor dan yang sering tertukar. Dari Confusion Matrix di atas, disimpulkan terlihat bahwa sebagian besar kelas sudah mencapai nilai diagonal 1.00 dan hampir seluruhnya dideteksi dengan benar, mengindikasikan bahwa model dapat mengklasifikasikan objek-objek tersebut dengan sangat baik.
 
 ### Testing
