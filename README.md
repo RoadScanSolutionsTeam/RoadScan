@@ -191,35 +191,27 @@ Dari grafik Training/Validation di atas dapat disimpulkan bahwa:
 - Potensi peningkatan performa: Meskipun model sudah menunjukkan performa yang bagus, masih ada potensi untuk meningkatkannya, terlihat dari tren metrics yang masih sedikit meningkat di akhir epoch. Pelatihan yang lebih lama atau penyesuaian hyperparameter dapat dipertimbangkan.
 
 #### 3. Confusion Matrix
+- Confusion Matrix <br>
 ![confusion_matrix](https://github.com/user-attachments/assets/d95d2dcc-b2b0-4f97-9a33-8dacc834cb2b)
+- Confusion Matrix Normalized <br>
 ![confusion_matrix_normalized](https://github.com/user-attachments/assets/ddc8b0e5-9fab-4726-aac3-424537385bd7)
 
-Confusion matrix menunjukkan performa model dalam mengklasifikasikan jenis kerusakan jalan dan background, dengan hasil terbaik pada kelas Memanjang (171 benar, 3 salah) dan Sambungan (136 benar, 11 salah), cukup baik pada kelas Lubang (154 benar, 18 salah) dan Retak Buaya (86 benar, 7 salah), namun kurang optimal pada kelas Pinggir (89 benar, >30 salah), Melintang (116 benar, 33 salah), serta Background yang memiliki performa terendah (13-11 benar). Untuk meningkatkan akurasi, diperlukan langkah seperti menyeimbangkan data, augmentasi, dan tuning model, terutama untuk kelas minor dan yang sering tertukar. Dari Confusion Matrix di atas, disimpulkan terlihat bahwa sebagian besar kelas sudah mencapai nilai diagonal 1.00 dan hampir seluruhnya dideteksi dengan benar, mengindikasikan bahwa model dapat mengklasifikasikan objek-objek tersebut dengan sangat baik.
+Dari Confusion Matrix di atas, disimpulkan terlihat bahwa sebagian besar kelas sudah mencapai nilai diagonal 1.00 dan hampir seluruhnya dideteksi dengan benar, mengindikasikan bahwa model dapat mengklasifikasikan objek-objek tersebut dengan sangat baik.
 
 ### Testing
 
-1. <br>
-![Untitled](https://github.com/user-attachments/assets/5c446257-5b4d-43ad-85f3-dd91e46cc5ce)
-2. <br>
-![Untitled](https://github.com/user-attachments/assets/d3617873-5e79-4e93-a410-374d10834aac)
-3. <br>
-![Untitled](https://github.com/user-attachments/assets/d7520c73-9297-4ef2-9b89-c96d9f9ff4f1)
-4. <br>
-![Untitled](https://github.com/user-attachments/assets/60b3637e-8c18-4f5f-9d0c-27897aea001c)
-5. <br>
-![Untitled](https://github.com/user-attachments/assets/5278354f-c326-4590-8be1-f7cdf64fb3d3)
-6. <br>
-![Untitled](https://github.com/user-attachments/assets/14f1292f-0f65-4c5d-bf0c-4c90a34b11ea)
-7. <br>
-![Untitled](https://github.com/user-attachments/assets/3150a55f-1637-4c8b-9963-9c27f84429b3)
-8. <br>
-![Untitled](https://github.com/user-attachments/assets/41b6a002-7730-40b3-a778-82087fed4477)
-9. <br>
-![Untitled](https://github.com/user-attachments/assets/15985a3a-5f13-4b6a-970f-966323537173)
-10. <br>
-![Untitled](https://github.com/user-attachments/assets/45f5ca98-1979-4f35-a925-00fc524e93ba)
+1. ![Untitled](https://github.com/user-attachments/assets/5c446257-5b4d-43ad-85f3-dd91e46cc5ce)
+2. ![Untitled](https://github.com/user-attachments/assets/d3617873-5e79-4e93-a410-374d10834aac)
+3. ![Untitled](https://github.com/user-attachments/assets/d7520c73-9297-4ef2-9b89-c96d9f9ff4f1)
+4. ![Untitled](https://github.com/user-attachments/assets/60b3637e-8c18-4f5f-9d0c-27897aea001c)
+5. ![Untitled](https://github.com/user-attachments/assets/5278354f-c326-4590-8be1-f7cdf64fb3d3)
+6. ![Untitled](https://github.com/user-attachments/assets/14f1292f-0f65-4c5d-bf0c-4c90a34b11ea)
+7. ![Untitled](https://github.com/user-attachments/assets/3150a55f-1637-4c8b-9963-9c27f84429b3)
+8. ![Untitled](https://github.com/user-attachments/assets/41b6a002-7730-40b3-a778-82087fed4477)
+9. ![Untitled](https://github.com/user-attachments/assets/15985a3a-5f13-4b6a-970f-966323537173)
+10. ![Untitled](https://github.com/user-attachments/assets/45f5ca98-1979-4f35-a925-00fc524e93ba)
 
-Berdasarkam hasil testing diatas menunjukkan bahwa performa model sudah sangat baik dalam mendeteksi suatu objek berdasarkan label nya dengan benar. dari 10 sample tersebut dinyatakan bahwa model sudah mampu untuk diterapkan sebagai pendeteksian kualitas infrastruktur jalan dengan baik.
+Berdasarkan hasil testing diatas menunjukkan bahwa performa model sudah sangat baik dalam mendeteksi suatu objek berdasarkan label nya dengan benar. dari 10 sample tersebut dinyatakan bahwa model sudah mampu untuk diterapkan sebagai pendeteksian kualitas infrastruktur jalan dengan baik.
 
 ### Deployment (Optional)
 Aplikasi ini dikembangkan dengan menggunakan library <b>Tkinter</b>, sebuah library Python populer untuk menciptakan antarmuka pengguna grafis (GUI) yang interaktif dan mudah digunakan. Dengan desain yang user-friendly, aplikasi ini dirancang untuk memberikan pengalaman pengguna yang intuitif dan nyaman. Fitur utama aplikasi ini adalah kemampuannya untuk mendeteksi dan mengidentifikasi kerusakan jalan secara akurat, berkat penggunaan model <b>YOLOv8</b> yang telah dikonfigurasi khusus untuk tugas deteksi kerusakan jalan. Proses deteksi dilakukan berdasarkan input berupa <b>file gambar</b> maupun <b>file video</b>, sehingga memungkinkan pengguna untuk menganalisis berbagai jenis data secara fleksibel.<br><br>
