@@ -178,12 +178,18 @@ Alasan kami memilih model tersebut sebagai model terbaik yang kami terapkan kare
 
 ##### Train / Val Loss:
 ![results](https://github.com/user-attachments/assets/ccf05972-4e6d-47a0-9f2a-f216572f45b3)
-Dari grafik Training/Validation di atas, terlihat bahwa semakin bertambah epoch, grafik loss train dan validation untuk object, box, dan kelas semakin menurun mendekati 0. Ini menunjukkan bahwa model semakin baik dan tidak mengalami overfitting maupun underfitting.
-Selain itu, grafik metrik precision, recall, dan mAP50 serta mAP50-95 juga meningkat mendekati 1.0 seiring bertambahnya epoch. Hal ini mengindikasikan bahwa performa model semakin baik dalam hal klasifikasi dan deteksi objek.
+Dari grafik Training/Validation di atas dapat disimpulkan bahwa:
+- Model berlatih dengan baik: Loss (box, cls, dfl) untuk data training dan validation menurun secara konsisten seiring bertambahnya epoch, menunjukkan proses pembelajaran yang efektif.
+
+- Tidak ada overfitting: Loss validation mengikuti tren loss training dengan baik, dan metrik performa (precision, recall, mAP50, mAP50-95) pada data validation terus meningkat. Hal ini menunjukkan model tidak overfitting pada data training.
+
+- Performa model bagus: Metrik evaluasi seperti precision, recall, mAP50, dan mAP50-95 menunjukkan angka yang relatif tinggi dan stabil, menandakan performa model yang baik dalam mendeteksi objek.
+
+- Potensi peningkatan performa: Meskipun model sudah menunjukkan performa yang bagus, masih ada potensi untuk meningkatkannya, terlihat dari tren metrics yang masih sedikit meningkat di akhir epoch. Pelatihan yang lebih lama atau penyesuaian hyperparameter dapat dipertimbangkan.
 
 #### 3. Confusion Matrix
 ![confusion_matrix](https://github.com/user-attachments/assets/d95d2dcc-b2b0-4f97-9a33-8dacc834cb2b)
-Confusion matrix menunjukkan performa model dalam mengklasifikasikan jenis kerusakan jalan dan background, dengan hasil terbaik pada kelas Memanjang (171 benar, 3 salah) dan Sambungan (136 benar, 11 salah), cukup baik pada kelas Lubang (154 benar, 18 salah) dan Retak Buaya (86 benar, 7 salah), namun kurang optimal pada kelas Pinggir (89 benar, >30 salah), Melintang (116 benar, 33 salah), serta Background yang memiliki performa terendah (13-11 benar). Untuk meningkatkan akurasi, diperlukan langkah seperti menyeimbangkan data, augmentasi, dan tuning model, terutama untuk kelas minor dan yang sering tertukar. Dari Confusion Matrix di atas, disimpulkan terlihat bahwa sebagian besar kelas sudah mencapai nilai diagonal 1.00, mengindikasikan bahwa model dapat mengklasifikasikan objek-objek tersebut dengan sangat baik.
+Confusion matrix menunjukkan performa model dalam mengklasifikasikan jenis kerusakan jalan dan background, dengan hasil terbaik pada kelas Memanjang (171 benar, 3 salah) dan Sambungan (136 benar, 11 salah), cukup baik pada kelas Lubang (154 benar, 18 salah) dan Retak Buaya (86 benar, 7 salah), namun kurang optimal pada kelas Pinggir (89 benar, >30 salah), Melintang (116 benar, 33 salah), serta Background yang memiliki performa terendah (13-11 benar). Untuk meningkatkan akurasi, diperlukan langkah seperti menyeimbangkan data, augmentasi, dan tuning model, terutama untuk kelas minor dan yang sering tertukar. Dari Confusion Matrix di atas, disimpulkan terlihat bahwa sebagian besar kelas sudah mencapai nilai diagonal 1.00 dan hampir seluruhnya dideteksi dengan benar, mengindikasikan bahwa model dapat mengklasifikasikan objek-objek tersebut dengan sangat baik.
 
 ### Testing
 Show some implementations (demos) of this model. Show **at least 10 images** of how your model performs on the testing data.
