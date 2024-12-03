@@ -82,6 +82,16 @@ RoadScan mendukung pencapaian Sustainable Development Goal (SDG) 11: Kota dan Pe
 - Keras==2.12.0 (latest)
 
 ### Environment
+**Google Colab**
+| | |
+| --- | --- |
+| CPU | Intel(R) Core(TM) i7-7820HQ CPU @ 2.90GHz   2.90 GHz |
+| GPU | NVIDIA Tesla T4 |
+| ROM | 256 GB SSD |
+| RAM | 15 GB |
+| OS | Windows 10 Pro 22H2 |
+
+**Deployment**
 | | |
 | --- | --- |
 | CPU | Intel(R) Core(TM) i7-7820HQ CPU @ 2.90GHz   2.90 GHz |
@@ -98,17 +108,24 @@ Dataset "Jalan Rusak" dirancang untuk mendeteksi kerusakan jalan menggunakan tek
 - Link: https://universe.roboflow.com/tugas-xogo7/jalanrusak-zofhk
 
 **Gambar Setiap Kelas**
-1. Lubang
+1. Lubang <br>
+   ![image](https://github.com/user-attachments/assets/31489c13-109c-406b-a143-1f0a410f5246)
    
-2. Melintang
+2. Melintang <br>
+   ![image](https://github.com/user-attachments/assets/f2ea7a42-9fd6-4bb5-8966-a9ad8ce642cc)
    
-3. Memanjang
+3. Memanjang <br>
+   ![image](https://github.com/user-attachments/assets/42d58552-a442-4e83-b155-30bf24524535)
    
-4. Pinggir
+4. Pinggir <br>
+   ![image](https://github.com/user-attachments/assets/2a2f5e5b-97b3-4fc4-83e6-50c6138300ca)
 
-5. Retak Buaya
+5. Retak Buaya <br>
+   ![image](https://github.com/user-attachments/assets/f93ffce3-4d90-4662-a02e-979be64c95d7)
    
-6. Sambungan
+6. Sambungan <br>
+   ![image](https://github.com/user-attachments/assets/e0893dd6-7333-48e5-8c64-3cc3d4387a9d)
+
 
 ## Results
 ### Model Performance
@@ -195,8 +212,9 @@ Dengan kombinasi teknologi terkini dan antarmuka yang sederhana, aplikasi ini me
 ### Presentation Deck
 - Link: https://...
 
+
 ### Business Model Canvas
-![BMC](https://github.com/user-attachments/assets/2a1f4902-abbc-4b5b-a80c-264a8cc85f5b)
+![BMC(2)](https://github.com/user-attachments/assets/3490eefd-a254-4786-9ee0-694e44e0fa4f)
 
 - **Problem Statement**
    <br>Tingginya tingkat kerusakan jalan berlubang di berbagai wilayah Indonesia menyebabkan peningkatan risiko kecelakaan lalu lintas dan menghambat
@@ -232,7 +250,7 @@ Dengan kombinasi teknologi terkini dan antarmuka yang sederhana, aplikasi ini me
 - **Value Propositions**
   1. Identifikasi cepat dan akurat
   2. Peningkatan keselamatan pengguna jalan
-  3. Transparansi data untuk pemerintah dan masyarakat
+  3. Penghematan Biaya Perawatan Jalan dengan identifikasi dan penanganan kerusakan jalan lebih awal
 
 - **Stakeholder / Customer Relationship**
   1. Customer Service
