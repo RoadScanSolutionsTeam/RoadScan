@@ -6,6 +6,7 @@
 **RoadScan** adalah platform berbasis teknologi object detection yang memanfaatkan kecerdasan buatan (AI) untuk mendeteksi berbagai kerusakan infrastruktur jalan seperti lubang, retakan, atau deformasi. Solusi ini memberikan kemampuan otomatisasi, akurasi tinggi, dan efisiensi dalam memantau kondisi jalan untuk perencanaan perbaikan yang lebih strategis.
 
 Penggunaan Computer Vision, khususnya Object Detection, terutama untuk mendeteksi dan mengidentifikasi berbagai kerusakan infrastruktur jalan sangat membantu dalam memantau kondisi jalan secara efisien dan akurat. Teknologi yang digunakan adalah YOLOv8s dari Ultralytics.
+
 YOLO (You Only Look Once) adalah sistem deteksi objek yang terkenal karena kecepatan dan akurasinya. Versi terbaru, YOLOv8s, membawa peningkatan yang signifikan dari versi sebelumnya.
 
 Detail Fitur dan Manfaat:
@@ -129,7 +130,9 @@ Dataset "Jalan Rusak" dirancang untuk mendeteksi kerusakan jalan menggunakan tek
 
 ## Results
 ### Model Performance
-Seperti yang tertera di deskripsi project bahwa model yang kami gunakan adalah YOLOv8s. Namun, sebelumnya kami telah mencoba terlebih dahulu membandingkan performa antara YOLOv8n dan YOLOv8s (mAP dan running time). Berdasarkan perbandingan dan ekplorasi yang telah dilakukan, kami memilih untuk menggunakan model YOLOv8s sebagai model dengan performa terbaik. Model-model yang dijalankan dilakukan preprocessing dengan melakukan resize image (imgsz) sebesar 640 untuk menyamaratakan size input image. Selebihnya data sudah cukup baik sehingga tidak dilakukan preprocessing lainnya.
+Seperti yang tertera di deskripsi project bahwa model yang kami gunakan adalah YOLOv8s. Namun, sebelumnya kami telah mencoba terlebih dahulu membandingkan performa antara YOLOv8n dan YOLOv8s (mAP dan running time). Berdasarkan perbandingan dan ekplorasi yang telah dilakukan, kami memilih untuk menggunakan model YOLOv8s sebagai model dengan performa terbaik.
+
+Model-model yang dijalankan dilakukan preprocessing dengan melakukan resize image (imgsz) sebesar 640 untuk menyamaratakan size input image. Selebihnya data sudah cukup baik sehingga tidak dilakukan preprocessing lainnya.
 
 #### 1. Metrics
 Berikut adalah tuning terbaik yang kami pilih dan gunakan untuk modifikasi arsitektur model.
@@ -194,20 +197,29 @@ Dari grafik Training/Validation di atas dapat disimpulkan bahwa:
 Confusion matrix menunjukkan performa model dalam mengklasifikasikan jenis kerusakan jalan dan background, dengan hasil terbaik pada kelas Memanjang (171 benar, 3 salah) dan Sambungan (136 benar, 11 salah), cukup baik pada kelas Lubang (154 benar, 18 salah) dan Retak Buaya (86 benar, 7 salah), namun kurang optimal pada kelas Pinggir (89 benar, >30 salah), Melintang (116 benar, 33 salah), serta Background yang memiliki performa terendah (13-11 benar). Untuk meningkatkan akurasi, diperlukan langkah seperti menyeimbangkan data, augmentasi, dan tuning model, terutama untuk kelas minor dan yang sering tertukar. Dari Confusion Matrix di atas, disimpulkan terlihat bahwa sebagian besar kelas sudah mencapai nilai diagonal 1.00 dan hampir seluruhnya dideteksi dengan benar, mengindikasikan bahwa model dapat mengklasifikasikan objek-objek tersebut dengan sangat baik.
 
 ### Testing
-Show some implementations (demos) of this model. Show **at least 10 images** of how your model performs on the testing data.
 
+1. <br>
 ![Untitled](https://github.com/user-attachments/assets/5c446257-5b4d-43ad-85f3-dd91e46cc5ce)
+2. <br>
 ![Untitled](https://github.com/user-attachments/assets/d3617873-5e79-4e93-a410-374d10834aac)
+3. <br>
 ![Untitled](https://github.com/user-attachments/assets/d7520c73-9297-4ef2-9b89-c96d9f9ff4f1)
+4. <br>
 ![Untitled](https://github.com/user-attachments/assets/60b3637e-8c18-4f5f-9d0c-27897aea001c)
+5. <br>
 ![Untitled](https://github.com/user-attachments/assets/5278354f-c326-4590-8be1-f7cdf64fb3d3)
+6. <br>
 ![Untitled](https://github.com/user-attachments/assets/14f1292f-0f65-4c5d-bf0c-4c90a34b11ea)
+7. <br>
 ![Untitled](https://github.com/user-attachments/assets/3150a55f-1637-4c8b-9963-9c27f84429b3)
+8. <br>
 ![Untitled](https://github.com/user-attachments/assets/41b6a002-7730-40b3-a778-82087fed4477)
+9. <br>
 ![Untitled](https://github.com/user-attachments/assets/15985a3a-5f13-4b6a-970f-966323537173)
+10. <br>
 ![Untitled](https://github.com/user-attachments/assets/45f5ca98-1979-4f35-a925-00fc524e93ba)
 
-Testing deteksi objek atau segmentasi model telah mendeteksi dan menyoroti berbagai lubang dan kerusakan di jalan tanah memberikan nilai numerik yang mewakili informasi tentang objek yang terdeteksi. Secara keseluruhan, tujuan pengujian ini adalah untuk mengevaluasi kinerja model dalam mendeteksi dan menganalisis kondisi jalan serta objek, yang dapat berguna untuk aplikasi seperti pemantauan infrastruktur dan navigasi kendaraan otonom. Model mampu memberikan penilaian kuantitatif atas elemen yang dideteksi, yang dapat bermanfaat untuk pengambilan keputusan berbasis data.
+Berdasarkam hasil testing diatas menunjukkan bahwa performa model sudah sangat baik dalam mendeteksi suatu objek berdasarkan label nya dengan benar. dari 10 sample tersebut dinyatakan bahwa model sudah mampu untuk diterapkan sebagai pendeteksian kualitas infrastruktur jalan dengan baik.
 
 ### Deployment (Optional)
 Aplikasi ini dikembangkan dengan menggunakan library <b>Tkinter</b>, sebuah library Python populer untuk menciptakan antarmuka pengguna grafis (GUI) yang interaktif dan mudah digunakan. Dengan desain yang user-friendly, aplikasi ini dirancang untuk memberikan pengalaman pengguna yang intuitif dan nyaman. Fitur utama aplikasi ini adalah kemampuannya untuk mendeteksi dan mengidentifikasi kerusakan jalan secara akurat, berkat penggunaan model <b>YOLOv8</b> yang telah dikonfigurasi khusus untuk tugas deteksi kerusakan jalan. Proses deteksi dilakukan berdasarkan input berupa <b>file gambar</b> maupun <b>file video</b>, sehingga memungkinkan pengguna untuk menganalisis berbagai jenis data secara fleksibel.<br><br>
