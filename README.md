@@ -102,8 +102,6 @@ RoadScan mendukung pencapaian Sustainable Development Goal (SDG) 11: Kota dan Pe
 | OS | Windows 10 Pro 22H2 |
 
 ## Dataset
-Describe your dataset information here. Provide a screenshot for some of your dataset samples (for example, if you're using CIFAR10 dataset, then show an image for each class).
-
 Dataset "Jalan Rusak" dirancang untuk mendeteksi kerusakan jalan menggunakan teknik computer vision. Dataset ini terdiri dari gambar-gambar yang telah dianotasi dengan label yang merepresentasikan berbagai jenis kerusakan jalan. Yaitu berisi kumpulan foto kerusakan jalan yang berjumlah 4.983 data, dengan pembagian sebanyak 4.098 data train, 591 data validation, dan 294 data test yang terbagi menjadi 6 kategori yaitu Lubang, Melintang, Memanjang, Pinggir, Retak Buaya dan Sambungan.
 
 - Link: https://universe.roboflow.com/tugas-xogo7/jalanrusak-zofhk
@@ -222,7 +220,7 @@ Dengan kombinasi teknologi terkini dan antarmuka yang sederhana, aplikasi ini me
 
 ## Supporting Documents
 ### Presentation Deck
-- Link: https://...
+- Link: https://drive.google.com/drive/folders/1POz2q_welpUzuJ7k8rlSRnLryN0kaFJL?usp=sharing
 
 
 ### Business Model Canvas
@@ -299,11 +297,9 @@ Dengan kombinasi teknologi terkini dan antarmuka yang sederhana, aplikasi ini me
   3. Integrasi premium
 
 ### Short Video
-Provide a link to your short video, that should includes the project background and how it works.
 - Link: https://...
 
 ## References
-Provide all links that support this final project, i.e., papers, GitHub repositories, websites, etc.
 - Link: https://www.aideeplearningml.com/how-to-train-yolov8-object-detection-on-custom-fruit-vegetabdataset/
 - Link: https://youtube.com/playlist?list=PL8q4s70ndvwf3mFNaW8BLNrrItNl6PlA2&si=V-woIN2RLIjSuKMO
 - Link: https://...
