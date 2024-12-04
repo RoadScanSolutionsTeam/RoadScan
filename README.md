@@ -186,8 +186,6 @@ Dari grafik Training/Validation di atas dapat disimpulkan bahwa:
 
 - Performa model bagus: Metrik evaluasi seperti precision, recall, mAP50, dan mAP50-95 menunjukkan angka yang relatif tinggi dan stabil, menandakan performa model yang baik dalam mendeteksi objek.
 
-- Potensi peningkatan performa: Meskipun model sudah menunjukkan performa yang bagus, masih ada potensi untuk meningkatkannya, terlihat dari tren metrics yang masih sedikit meningkat di akhir epoch. Pelatihan yang lebih lama atau penyesuaian hyperparameter dapat dipertimbangkan.
-
 #### 3. Confusion Matrix
 - Confusion Matrix <br>
 ![confusion_matrix](https://github.com/user-attachments/assets/d95d2dcc-b2b0-4f97-9a33-8dacc834cb2b)
