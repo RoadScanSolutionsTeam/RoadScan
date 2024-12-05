@@ -1,5 +1,4 @@
-# RoadScan
-### AI-Driven Road Quality Detection for Accessibility and Safety
+# RoadScan: AI-Driven Road Quality Detection for Accessibility and Safety
 
 ## Project Description
 
