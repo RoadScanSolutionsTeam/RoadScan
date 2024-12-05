@@ -209,9 +209,26 @@ Dari Confusion Matrix di atas, disimpulkan terlihat bahwa sebagian besar kelas s
 Berdasarkan hasil testing diatas menunjukkan bahwa performa model sudah sangat baik dalam mendeteksi suatu objek berdasarkan label nya dengan benar. dari 10 sample tersebut dinyatakan bahwa model sudah mampu untuk diterapkan sebagai pendeteksian kualitas infrastruktur jalan dengan baik.
 
 ### Deployment (Optional)
+
+Anda dapat mengunduh aplikasi kami melalui link berikut:
+[![Release v1.0](https://img.shields.io/badge/Release-v1.0-blue.svg?style=flat-square)](https://github.com/RoadScanSolutionsTeam/RoadScan/releases/tag/v1.0)
+<br><br>
 Aplikasi ini dikembangkan dengan menggunakan library <b>Tkinter</b>, sebuah library Python populer untuk menciptakan antarmuka pengguna grafis (GUI) yang interaktif dan mudah digunakan. Dengan desain yang user-friendly, aplikasi ini dirancang untuk memberikan pengalaman pengguna yang intuitif dan nyaman. Fitur utama aplikasi ini adalah kemampuannya untuk mendeteksi dan mengidentifikasi kerusakan jalan secara akurat, berkat penggunaan model <b>YOLOv8</b> yang telah dikonfigurasi khusus untuk tugas deteksi kerusakan jalan. Proses deteksi dilakukan berdasarkan input berupa <b>file gambar</b> maupun <b>file video</b>, sehingga memungkinkan pengguna untuk menganalisis berbagai jenis data secara fleksibel.<br><br>
 Keunggulan lain dari aplikasi ini adalah adanya fitur <b>Pause Detection</b> dan <b>Start Detection</b>, yang memberikan kontrol penuh kepada pengguna dalam proses identifikasi. Dengan fitur ini, pengguna dapat menghentikan atau melanjutkan deteksi kapan saja, menjadikan analisis kerusakan jalan lebih efisien dan optimal.<br><br>
 Dengan kombinasi teknologi terkini dan antarmuka yang sederhana, aplikasi ini menjadi solusi andal untuk membantu mendeteksi dan memetakan kerusakan jalan, membuka peluang untuk pengelolaan infrastruktur yang lebih baik.
+<br><br>
+<b>PREVIEW</b>
+1. **Main Menu**  
+   ![Main Menu](Deployment/preview/mainmenu.png)
+
+2. **Image Detection**  
+   ![Image Detection](Deployment/preview/image-detection1.png)
+
+3. **Video Detection**  
+   ![Video Detection](Deployment/preview/video-detection2.png)
+
+4. **About**  
+   ![About](Deployment/preview/about.png)
 
 
 
