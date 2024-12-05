@@ -80,6 +80,7 @@ RoadScan mendukung pencapaian Sustainable Development Goal (SDG) 11: Kota dan Pe
 - setuptools==67.2.0 (latest)
 - wheel==0.38.4 (latest)
 - Keras==2.12.0 (latest)
+- pyinstaller==6.11.1
 
 ### Environment
 **Google Colab**
