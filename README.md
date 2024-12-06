@@ -321,7 +321,7 @@ Dengan kombinasi teknologi terkini dan antarmuka yang sederhana, aplikasi ini me
   3. Integrasi premium
 
 ### Short Video
-- Link: https://...
+- Link: https://youtu.be/93PbTtxGcyA?si=j4vJaZK0mrKENUGM
 
 ## References
 - Link: https://www.aideeplearningml.com/how-to-train-yolov8-object-detection-on-custom-fruit-vegetabdataset/
