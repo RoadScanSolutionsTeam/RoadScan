@@ -18,6 +18,8 @@ Detail Fitur dan Manfaat:
 - **Peningkatan Keselamatan dan Kepuasan Pengguna Jalan**<br>
    Dengan deteksi dini kerusakan jalan ini menurunkan risiko kecelakaan akibat jalan rusak dan meningkatkan kepercayaan masyarakat terhadap kualitas infrastruktur.
 
+## Sustainability Value
+![SDG11](https://github.com/user-attachments/assets/756e7c07-efa3-4ef9-aa27-d0e0d9734c6b)
 RoadScan mendukung pencapaian Sustainable Development Goal (SDG) 11: Kota dan Pemukiman yang Berkelanjutan.
 - Meningkatkan keselamatan dan mobilitas masyarakat melalui deteksi dini kerusakan jalan.
 - Mendorong efisiensi dalam perbaikan jalan, sehingga mendukung kota yang lebih tangguh, aman, dan ramah lingkungan.
