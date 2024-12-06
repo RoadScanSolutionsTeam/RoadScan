@@ -132,6 +132,13 @@ Seperti yang tertera di deskripsi project bahwa model yang kami gunakan adalah Y
 
 Model-model yang dijalankan dilakukan preprocessing dengan melakukan resize image (imgsz) sebesar 640 untuk menyamaratakan size input image. Selebihnya data sudah cukup baik sehingga tidak dilakukan preprocessing lainnya.
 
+#### YOLOv8 Architecture
+![Yolov8-architecture](https://github.com/user-attachments/assets/e7d5f24c-be9a-4579-8b18-1fe672feca56)
+1. Backbone: CNN yang mengekstraksi fitur dari gambar input. YOLOv8 menggunakan CSPDarknet53 dengan koneksi silang antar tahap untuk meningkatkan aliran informasi dan akurasi.
+2. Neck: Menggabungkan peta fitur dari berbagai tahap backbone untuk menangkap informasi pada berbagai skala. Menggunakan modul C2f yang menggabungkan fitur semantik tingkat tinggi dan informasi spasial rendah, meningkatkan akurasi deteksi, terutama untuk objek kecil.
+3. Head: Bertanggung jawab untuk membuat prediksi, seperti kotak pembatas, skor objektivitas, dan probabilitas kelas untuk setiap sel grid pada peta fitur, yang kemudian digabungkan untuk deteksi akhir.
+
+
 #### 1. Metrics
 Berikut adalah tuning terbaik yang kami pilih dan gunakan untuk modifikasi arsitektur model.
 
@@ -317,7 +324,7 @@ Dengan kombinasi teknologi terkini dan antarmuka yang sederhana, aplikasi ini me
 ## References
 - Link: https://www.aideeplearningml.com/how-to-train-yolov8-object-detection-on-custom-fruit-vegetabdataset/
 - Link: https://youtube.com/playlist?list=PL8q4s70ndvwf3mFNaW8BLNrrItNl6PlA2&si=V-woIN2RLIjSuKMO
-- Link: https://...
+- Link: https://yolov8.org/yolov8-architecture/
 
 ## Additional Comments
 Provide your team's additional comments or final remarks for this project. For example,
