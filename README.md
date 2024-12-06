@@ -76,12 +76,12 @@ RoadScan mendukung pencapaian Sustainable Development Goal (SDG) 11: Kota dan Pe
 - MarkupSafe==2.0
 - sympy==1.13.1
 - mpmath<1.4,==1.1.0
-- Python==3.11.2 (latest)
+- Python==3.11.2 
 - tkinter==Integrated with Python
-- pip==23.0.1 (latest)
-- setuptools==67.2.0 (latest)
-- wheel==0.38.4 (latest)
-- Keras==2.12.0 (latest)
+- pip==23.0.1 
+- setuptools==67.2.0 
+- wheel==0.38.4 
+- Keras==2.12.0 
 - pyinstaller==6.11.1
 
 ### Environment
